@@ -1,0 +1,24 @@
+dubbo:
+  application:
+    name: user-consumer
+    id: user-consumer
+  registry:
+    address: nacos://127.0.0.1:8848
+  protocols:
+    dubbo:
+      name: dubbo
+      port: -2
+      server: tomcat
+    rest:
+      name: rest
+      port: 8889
+      server: tomcat
+spring:
+  application:
+    name: consumer-demo
+  main:
+    allow-bean-definition-overriding: true
+server:
+  port: 8090
+
+
